@@ -9,11 +9,10 @@
     "skipLibCheck": true,
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
-    "verbatimModuleSyntax": true,
+    "verbatimModuleSyntax": false,
     "moduleDetection": "force",
     "noEmit": true,
     "strict": true,
-    "erasableSyntaxOnly": true,
   },
   "include": [
     "vite.config.ts"

@@ -1,0 +1,23 @@
+{
+  "typing": {
+    "baseDirectory": "sounds/typing/",
+    "files": [
+      {
+        "path": "keypress-neutral.mp3",
+        "name": "Neutral Keyboard"
+      },
+      {
+        "path": "keypress-laptop-soft.wav",
+        "name": "Laptop Keyboard (Soft)"
+      },
+      {
+        "path": "keypress-laptop-hard.wav",
+        "name": "Laptop Keyboard (Hard)"
+      },
+      {
+        "path": "keypress-mechanical.wav",
+        "name": "Mechanical Keyboard"
+      }
+    ]
+  }
+}

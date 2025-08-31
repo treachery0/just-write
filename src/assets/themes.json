@@ -1,0 +1,50 @@
+[
+  {
+    "id": "light",
+    "light": true
+  },
+  {
+    "id": "dark",
+    "light": false
+  },
+  {
+    "id": "retro",
+    "light": true
+  },
+  {
+    "id": "valentine",
+    "light": true
+  },
+  {
+    "id": "halloween",
+    "light": false
+  },
+  {
+    "id": "pastel",
+    "light": true
+  },
+  {
+    "id": "black",
+    "light": false
+  },
+  {
+    "id": "night",
+    "light": false
+  },
+  {
+    "id": "dim",
+    "light": false
+  },
+  {
+    "id": "winter",
+    "light": true
+  },
+  {
+    "id": "sunset",
+    "light": false
+  },
+  {
+    "id": "caramellatte",
+    "light": true
+  }
+]

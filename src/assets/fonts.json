@@ -1,0 +1,8 @@
+{
+  "minimumSize": 6,
+  "maximumSize": 72,
+  "baseDirectory": "fonts/",
+  "availableFonts": [
+    "OpenSans.ttf"
+  ]
+}

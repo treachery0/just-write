@@ -5,15 +5,14 @@
     "src/**/*.vue"
   ],
   "compilerOptions": {
+    "target": "ES2023",
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
     "strict": true,
     "composite": true,
-    "erasableSyntaxOnly": true,
+    "verbatimModuleSyntax": false,
     "baseUrl": ".",
     "paths": {
-      "@/*": [
-        "./src/*"
-      ]
+      "@/*": ["./src/*"]
     }
   }
 }
