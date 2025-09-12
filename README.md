@@ -2,10 +2,10 @@
 
 ## Planned features
 
-- Upload custom fonts
-- Upload custom sounds
-- Blur or redact what you already wrote
-- Background images
+- Font switching
 - Ambient sound
-- Change save frequency for text
-- Reset settings
+- Background images
+- Blur or redact already written text
+- Upload custom sounds
+- Upload custom fonts
+- Forbid copy paste

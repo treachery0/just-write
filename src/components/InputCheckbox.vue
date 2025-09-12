@@ -4,7 +4,7 @@
 
 <template>
     <label class="label">
-        <input type="checkbox" class="toggle toggle-secondary toggle-xs" v-model="value"/>
+        <input type="checkbox" class="checkbox checkbox-secondary checkbox-xs" v-model="value"/>
         <span class="select-none">
             <slot/>
         </span>

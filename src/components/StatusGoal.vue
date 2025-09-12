@@ -2,14 +2,10 @@
     import { computed } from "vue";
     import { countWords } from "alfaaz";
     import { Settings } from "@/models/Settings.ts";
-    import { SaveState } from "@/composables/useAutosave.ts";
-    import StatusSave from "@/components/StatusSave.vue";
-    import StatusWordCount from "@/components/StatusWordCount.vue";
 
-    const {settings, text, state} = defineProps<{
+    const {settings, text} = defineProps<{
         settings: Settings
         text: string
-        state: SaveState
     }>();
 
     const characterCount = computed(() => text.length);
@@ -42,7 +38,11 @@
 
         <div class="grid grid-cols-3 text-sm px-1">
             <div class="text-start">
-                <status-word-count v-if="settings.showWordCount" :words :characters/>
+                <span v-if="settings.goal.showWordCount">
+                    <span>{{ words }} words</span>
+                    <span class="mx-1">|</span>
+                    <span>{{ characters }} characters</span>
+                </span>
             </div>
             <div class="text-center text-primary">
                 <span v-if="settings.goal.enabled">
@@ -50,7 +50,9 @@
                 </span>
             </div>
             <div class="text-end">
-                <status-save v-if="settings.showSaveStatus" :state/>
+                <span v-if="settings.goal.enabled">
+                    {{ settings.goal.count }} {{ settings.goal.unit }}
+                </span>
             </div>
         </div>
     </div>

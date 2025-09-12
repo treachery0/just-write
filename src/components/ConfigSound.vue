@@ -39,7 +39,7 @@
         <legend class="fieldset-legend">Typing sound</legend>
 
         <div class="flex items-center">
-            <select v-model="currentSound.path" class="select select-secondary me-4">
+            <select v-model="currentSound.path" class="select select-secondary select-sm me-4">
                 <option :value="undefined">Off</option>
                 <option v-for="sound in sounds.files" :value="sounds.baseDirectory + sound.path">{{ sound.name }}</option>
             </select>

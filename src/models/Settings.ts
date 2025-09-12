@@ -5,11 +5,10 @@ import { GoalOptions } from "@/models/GoalOptions.ts";
 export interface Settings {
     theme: string
     background: string | undefined
+    showSandbox: boolean
+    showStartScreen: boolean
     ambientSound: SoundOptions
     typingSound: SoundOptions
     font: FontOptions
-    showSplash: boolean
-    showWordCount: boolean
-    showSaveStatus: boolean
     goal: GoalOptions
 }
