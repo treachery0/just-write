@@ -24,7 +24,7 @@
             v-model="value"
         />
 
-        <select v-if="unitList && unitList.length" :disabled class="select select-sm w-auto text-end border-0 focus:outline-0 pe-8 h-[30px] bg-secondary/15 focus:bg-secondary focus:text-secondary-content rounded-none">
+        <select v-model="unit" v-if="unitList && unitList.length" :disabled class="select select-sm w-auto text-end border-0 focus:outline-0 pe-8 h-[30px] bg-secondary/15 focus:bg-secondary focus:text-secondary-content rounded-none">
             <option v-for="item in unitList" :value="item">{{ item }}</option>
         </select>
 

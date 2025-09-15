@@ -1,5 +1,5 @@
 <script setup lang="ts">
-    import { computed } from "vue";
+    import { computed, watch } from "vue";
     import { useTextareaAutosize } from "@vueuse/core";
     import { FontOptions } from "@/models/FontOptions.ts";
 
@@ -17,10 +17,12 @@
         fontFamily: font.name
     }));
 
-    const {textarea} = useTextareaAutosize({
+    const {textarea, triggerResize} = useTextareaAutosize({
         input: value,
         styleProp: 'minHeight'
     });
+
+    watch(style, triggerResize);
 </script>
 
 <template>
